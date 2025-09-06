@@ -1,0 +1,20 @@
+# RTD setup file (v2). See https://docs.readthedocs.io/en/stable/config-file/v2.html
+version: 2
+
+# Build image and toolchain
+build:
+  os: ubuntu-24.04
+  tools:
+    python: "3.12"
+
+# Sphinx entrypoint for the docs
+sphinx:
+  configuration: docs/source/conf.py
+
+# How to install the project for docs builds
+python:
+  install:
+    - method: pip
+      path: .
+      extra_requirements:
+        - docs
