@@ -1,0 +1,56 @@
+# virtual environments & runtime logs
+.venv/
+venv/
+env/
+.env
+.env.local
+uv.lock
+logs/
+
+# AI agents & editor rules
+CLAUDE.md
+.claude/
+.cursorrules
+.cursor/
+.crush/
+.opencode
+
+# build artifacts & packaging leftovers
+dist/
+build/
+_build/
+docs/build/
+*.egg-info/
+*/__pycache__/
+.pytest_cache/
+*.pyo
+*.pyd
+*.pyc
+
+# experiment outputs
+wandb/
+outputs/
+logs/
+
+# dev tooling clutter
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# drafts / WIPs
+wip/
+old/
+# scripts/
+notebooks/
+hol/schizo.hol
+hol/agent-SYNAPSE.hol
+hol/agent-elesis.hol
+
+# imported bits
+src/.party/
+userconf.py
+
+# miscellaneous local configs
+configs/
+.idea/**/*
